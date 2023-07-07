@@ -80,6 +80,7 @@ Buku catatan yang dihasilkan sudah diisi sebelumnya dengan kode Python dan dibag
 ![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/2980352c-7c7f-4e58-96d7-c6c612078e7e)
 
 _b.	Setup_
+
 Bagian ini berisi informasi kredensial untuk mengakses Cloud Object Storage yang digunakan untuk mengambil pipeline AutoAI yang sedang digunakan. Sel ini berisi kode yang sudah disiapkan sebelumnya untuk mengekstrak data pelatihan yang digunakan dalam pembuatan pipeline serta hasil dari pipeline tersebut. 
  
 ![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/e0fb51e2-a6db-4ab0-bdb6-40e3544f0dd7)
