@@ -57,7 +57,7 @@ Setelah berhasil melakukan Langkah diatas maka anda akan melihat pemberitahuan y
 ![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/6d7f6f7d-75d0-4444-a2d9-b01e8469a7dc)
 
 
-** Experiment Notebook menyediakan kode yang dijelaskan secara detail sehingga Anda dapat: **
+**Experiment Notebook menyediakan kode yang dijelaskan secara detail sehingga Anda dapat:**
 
 1.	Berinteraksi dengan pipeline model yang telah dilatih
 2.	Mengakses detail model secara programatik, termasuk pentingnya fitur dan metrik pembelajaran mesin
@@ -66,47 +66,56 @@ Setelah berhasil melakukan Langkah diatas maka anda akan melihat pemberitahuan y
 5.	Membuat deployment dan melakukan scoring terhadap model
 6.	Mendapatkan konfigurasi eksperimen yang dapat digunakan untuk otomatisasi atau integrasi dengan aplikasi lainnya.
 
-** Untuk membuat experiment notebook, lakukan Langkah – Langkah berikut: **
+**Untuk membuat experiment notebook, lakukan Langkah – Langkah berikut:**
 
 1.	Setelah eksperimen AutoAI selesai, klik tombol Save Experiment Code yang ditandai dengan ikon penyimpanan (floppy disk)
 2.	Pada prompt Save Experiment Code, jika diperlukan, ubah default Name dan klik Save. Sebuah pop-up akan muncul yang menunjukkan bahwa notebook berhasil disimpan. Sekarang Anda akan melihat notebook ini dalam bagian Notebook di tab Assets.
  
-a.	Load and execute notebook
+_a.	Load and execute notebook_
+
 Jelajahi bagian – bagian notebook untuk mendapatkan gambaran umum. Sebuah notebook terdiri dari sel - sel teks (markdown atau heading) dan sel-sel kode. Sel - sel markdown menyediakan komentar mengenai tujuan dari kode yang disusun.
 Jalankan setiap sel secara individu dengan menyorot setiap sel, lalu klik tombol Run di bagian atas notebook atau menggunakan pintasan keyboard untuk menjalankan sel (Shift + Enter, namun bisa bervariasi tergantung pada platform). Saat sel sedang dieksekusi, sebuah tanda asterisk ([*]) akan muncul di sebelah kiri sel. Setelah sel selesai dieksekusi, akan muncul sebuah nomor urutan.
 Buku catatan yang dihasilkan sudah diisi sebelumnya dengan kode Python dan dibagi menjadi 5 bagian utama sebagai berikut :
  
-Gambar 15 package yang di butuhkan
-b.	Setup
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/2980352c-7c7f-4e58-96d7-c6c612078e7e)
+
+_b.	Setup_
 Bagian ini berisi informasi kredensial untuk mengakses Cloud Object Storage yang digunakan untuk mengambil pipeline AutoAI yang sedang digunakan. Sel ini berisi kode yang sudah disiapkan sebelumnya untuk mengekstrak data pelatihan yang digunakan dalam pembuatan pipeline serta hasil dari pipeline tersebut. 
  
-Gambar 16 meta data experiment
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/e0fb51e2-a6db-4ab0-bdb6-40e3544f0dd7)
+
 Bagian ini berisi metadata pipeline yang digunakan untuk menjalankan eksperimen.
  
-Gambar 17 metadata pipeline
-api_key
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/0c27ebb0-65f7-49e0-a063-9d24fbf4cd2a)
+
+input api_key melalui IAM dari profile IBM Cloud
 Untuk dapat mengakses WML instance, pengguna perlu menghasilkan kunci API melalui akun cloud dan menyalinnya ke sel seperti yang ditunjukkan dalam sel di bawah ini. Instruksi untuk mendapatkan kunci API cloud dijelaskan dalam bagian markdown pada tangkapan layar yang ditampilkan di bawah ini.
  
-Gambar 18 contoh integrasi Machine  Learning 
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/35dccb46-fe75-4617-b054-02f87a0f93bb)
 
 c.	Perbandingan Pipelines
+
 Untuk membandingkan semua pipeline yang dihasilkan, panggil method summary() pada objek pipeline. Model dengan performa terbaik disimpan dalam variabel best_pipeline_name.
  
-Gambar 19 baris pipeline yang terpilih
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/273b50b9-6e46-40ef-8b67-4ebb36d8fde1)
+
 d.	Memeriksa Pipeline
+
 Dalam bagian ini dari notebook, terdapat kode untuk memvisualisasikan tahapan-tahapan dalam model sebagai grafik menggunakan API AutoAI Watson Machine Learning.
  
-Gambar 20 visualisasi pipeline 
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/d16e1307-d7a4-4a6e-a05a-99c05ae98ad4)
 
 Bagian ini juga berisi kode yang mengekstrak model saat ini dan mencetaknya sebagai kode Python.
  
-Gambar 3 baris kode untuk mengekstrak model
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/6c532d65-90bd-481a-a691-085e2ceff6dd)
+
 e.	Deploy and score as web service using WML instance
+
 Bagian dari notebook ini berisi kode yang dapat mendeploy model pipeline sebagai layanan web menggunakan Watson Machine Learning. Bagian ini membutuhkan pengguna untuk memasukkan kredensial agar dapat mengidentifikasi instansi WML yang tepat dan ruang deployment.
  
-Gambar 4 deployments mode
- 
-Langkah deploy :
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/66822107-ac01-4419-844e-426a1c0076f7)
+
+**Langkah deploy :**
 1.	Klik hamburger menu di sudut kiri atas halaman utama Watson Studio.
 2.	Klik pada Deployment Spaces dari daftar dan pilih View All Spaces.
 3.	Klik New Deployment Space, pilih opsi Create An Empty Space.
@@ -114,31 +123,38 @@ Langkah deploy :
 5.	Klik View New Space dan beralih ke tab Settings dan salin ID space tersebut.
 Dapatkan target_space_id seperti yang dijelaskan dalam Langkah – Langkah di atas, lalu tempelkan dalam bagian create deployment. Penggunaan API Watson Machine Learning memerlukan wml_credentials dan target_space_id untuk mendeploy model pembelajaran mesin sebagai layanan web.
  
-Gambar 5 deployments creation 
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/3bb04f47-400a-46c5-8ab9-97e9bff78a9f)
 
 Setelah sel – sel dieksekusi, model akan dipromosikan ke ruang deployment dan sekarang tersedia sebagai layanan web. Anda dapat memverifikasinya melalui antarmuka pengguna seperti yang ditunjukkan di bawah ini.
  
-Gambar 6 pipeline untuk webservice
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/d1392b82-bed6-430f-adae-e1b6cec60415)
+
 III.3	Hasil Pengolahan Data dari AutoAI
 Uraikan berbagai hasil yang diperoleh selama menjalankan project MSIB di organisasi Mitra MSIB, rinciannya mengacu pada lampiran dokumen teknik jika ada. Hasil selama mengikuti MSIB dikaitkan juga dengan tujuan MSIB di sub bab I.3.
-Jadi hasil dari pemrosesan data di Watson studio dengan AutoAI mendapatkan beberapa hasil tes sebagai berikut :
+
+**Jadi hasil dari pemrosesan data di Watson studio dengan AutoAI mendapatkan beberapa hasil tes sebagai berikut :**
+
 1.	Relationship map
+
 Di sini saya memantau pergerakan pH berdasarkan pengambilan test sebelumnya terdapat sedikit perbedaan data berdasarkan jumlah yang ada sebelumnya.
 Pada AutoAI terdapat beberapa pipeline yang paling di rekomendasikan dari AutoAI seperti pada gambar : 
-
  
-Gambar 7 hasil prediksi dari AutoAI
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/af5e9a97-bc79-4d7e-b04a-65e7e5650484)
+
 Di sini terdapat tiga rekomendasi pipeline dari AutoAI dengan beberapa hasil yang  berbeda selain hasil yang di dapat, AutoAI juga dapat memberikan peningkatan prediksi.
-Berikut untuk hasil prediksi pH yang terbaik dari data set yang telah penulis dapat sebelumnya : 
 
+Berikut untuk hasil prediksi pH yang terbaik dari data set yang telah penulis dapat sebelumnya : 
  
-Gambar 8 forecasting result
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/70bea4a7-728b-4b9a-b256-c12b9f994528)
+
 Di sini penulis mencoba analisis dari pH, karena pH merupakan salah satu indikator dari tingkat keasaman suatu air dan menjadi tingkat apakah air di suatu tempat dapat dikonsumsi, atau hanya di gunakan untuk mandi, mencuci dan lain – lain. 
 Selain dari forecasting result di atas terdapat dua pengolahan data yang telah di olah oleh AutoAI  
  
-Gambar 9 Prediction Over Time
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/82052ee9-ec8b-4db8-995c-07a3e136e257)
+
 "Prediction over time" mengacu pada kemampuan model prediksi untuk menghasilkan prediksi atau perkiraan terhadap suatu variabel atau fenomena seiring berjalannya waktu.
 Karena sebelumnya penulis membuat  prediksi data berdasarkan waktu maka di sini terdapat hasil pengolahan data berdasarkan waktu ke waktu.
 Selain beberapa hasil di atas autoAI juga memberikan data error dari backtest yang telah di lakukan seperti halnya gambar di bawah.
  
-Gambar 10 Mean absolute error by Backfest
+![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/76966009-301d-44e8-95e3-aaf3014e4bb9)
+
