@@ -58,6 +58,7 @@ Setelah berhasil melakukan Langkah diatas maka anda akan melihat pemberitahuan y
 
 
 ** Experiment Notebook menyediakan kode yang dijelaskan secara detail sehingga Anda dapat: **
+
 1.	Berinteraksi dengan pipeline model yang telah dilatih
 2.	Mengakses detail model secara programatik, termasuk pentingnya fitur dan metrik pembelajaran mesin
 3.	Visualisasikan setiap pipeline sebagai grafik dengan setiap node yang didokumentasikan untuk memberikan transparansi
@@ -65,7 +66,7 @@ Setelah berhasil melakukan Langkah diatas maka anda akan melihat pemberitahuan y
 5.	Membuat deployment dan melakukan scoring terhadap model
 6.	Mendapatkan konfigurasi eksperimen yang dapat digunakan untuk otomatisasi atau integrasi dengan aplikasi lainnya.
 
-** Untuk membuat experiment notebook, lakukan Langkah – Langkah berikut : **
+** Untuk membuat experiment notebook, lakukan Langkah – Langkah berikut: **
 
 1.	Setelah eksperimen AutoAI selesai, klik tombol Save Experiment Code yang ditandai dengan ikon penyimpanan (floppy disk)
 2.	Pada prompt Save Experiment Code, jika diperlukan, ubah default Name dan klik Save. Sebuah pop-up akan muncul yang menunjukkan bahwa notebook berhasil disimpan. Sekarang Anda akan melihat notebook ini dalam bagian Notebook di tab Assets.
