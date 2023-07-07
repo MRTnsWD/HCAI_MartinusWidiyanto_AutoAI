@@ -94,13 +94,13 @@ Untuk dapat mengakses WML instance, pengguna perlu menghasilkan kunci API melalu
  
 ![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/35dccb46-fe75-4617-b054-02f87a0f93bb)
 
-c.	Perbandingan Pipelines
+_c.	Perbandingan Pipelines_
 
 Untuk membandingkan semua pipeline yang dihasilkan, panggil method summary() pada objek pipeline. Model dengan performa terbaik disimpan dalam variabel best_pipeline_name.
  
 ![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/273b50b9-6e46-40ef-8b67-4ebb36d8fde1)
 
-d.	Memeriksa Pipeline
+_d.	Memeriksa Pipeline_
 
 Dalam bagian ini dari notebook, terdapat kode untuk memvisualisasikan tahapan-tahapan dalam model sebagai grafik menggunakan API AutoAI Watson Machine Learning.
  
@@ -110,19 +110,21 @@ Bagian ini juga berisi kode yang mengekstrak model saat ini dan mencetaknya seba
  
 ![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/6c532d65-90bd-481a-a691-085e2ceff6dd)
 
-e.	Deploy and score as web service using WML instance
+_e.	Deploy and score as web service using WML instance_
 
 Bagian dari notebook ini berisi kode yang dapat mendeploy model pipeline sebagai layanan web menggunakan Watson Machine Learning. Bagian ini membutuhkan pengguna untuk memasukkan kredensial agar dapat mengidentifikasi instansi WML yang tepat dan ruang deployment.
  
 ![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/66822107-ac01-4419-844e-426a1c0076f7)
 
 **Langkah deploy :**
+
 1.	Klik hamburger menu di sudut kiri atas halaman utama Watson Studio.
 2.	Klik pada Deployment Spaces dari daftar dan pilih View All Spaces.
 3.	Klik New Deployment Space, pilih opsi Create An Empty Space.
 4.	Provide a name, pilih layanan machine learning yang telah dibuat sebelumnya, dan klik Create.
 5.	Klik View New Space dan beralih ke tab Settings dan salin ID space tersebut.
-Dapatkan target_space_id seperti yang dijelaskan dalam Langkah – Langkah di atas, lalu tempelkan dalam bagian create deployment. Penggunaan API Watson Machine Learning memerlukan wml_credentials dan target_space_id untuk mendeploy model pembelajaran mesin sebagai layanan web.
+
+Dapatkan target_space_id (Project Machine Learning ID) seperti yang dijelaskan dalam Langkah – Langkah di atas, lalu tempelkan dalam bagian create deployment. Penggunaan API Watson Machine Learning memerlukan wml_credentials dan target_space_id untuk mendeploy model pembelajaran mesin sebagai layanan web.
  
 ![image](https://github.com/MRTnsWD/HCAI_MartinusWidiyanto_AutoAI/assets/86089281/3bb04f47-400a-46c5-8ab9-97e9bff78a9f)
 
